@@ -99,7 +99,7 @@ class Application extends BaselineApplication {
 	 * @return array
 	 */
 	protected function getBaselineConfig () {
-		return $this -> getArraysService() -> deepMerge(parent::getBaselineConfig(), array(
+		return self::getArraysService() -> deepMerge(parent::getBaselineConfig(), array(
 			"environment" => array(
 				"root_path"			=> "",
 			),
